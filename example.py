@@ -16,15 +16,15 @@ app = Flask(__name__)
 
 
 app.config['MAIL'] = 1
-app.config['MAIL_SERVER'] = 'smtp.office365.com'
+app.config['MAIL_SERVER'] = 'smtp.gmail.com.'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'joseph.reymond@tatacommunications.com'
-app.config['MAIL_PASSWORD'] = config('KEY')
+app.config['MAIL_USERNAME'] = 'edwardsteve2011@gmail.com'
+app.config['MAIL_PASSWORD'] = 'hqleqzdoniuykfqm'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379',
 app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379'
-app.config['SENDER_1'] = 'joseph.reymond@tatacommunications.com'
+app.config['SENDER_1'] = 'edwardsteve2011@gmail.com'
 
 
 celery = make_celery(app)
